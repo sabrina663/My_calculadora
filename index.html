@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang='pt-br'>
+<head>
+    <meta charset='UTF-8'>
+    <link rel='stylesheet' href='_css/estilo.css'>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class='conteiner-calculadora'>
+            <input id='resultado' class='display-cal' type="text" placeholder='0' disabled='disabled'>
+        <div class='button-cal'>
+            <button onclick="calculadora('acao', 'c')" id='clear' class="button-clear-zero" >C</button>
+            <button onclick="calculadora('acao', '/')" class="button-padrao" >/</button>
+            <button onclick="calculadora('acao', 'x')"class="button-padrao" >X</button>
+        </div><!--//button-cal-->
+        
+        <div class='button-cal'>
+            <button onclick="calculadora('valor', 7)" class="button-padrao" >7</button>
+            <button onclick="calculadora('valor', 8)" class="button-padrao" >8</button>
+            <button onclick="calculadora('valor', 9)" class="button-padrao" >9</button>
+            <button onclick="calculadora('acao', '-')" class="button-padrao" >-</button>
+        </div><!--//button-cal-->
+
+        <div class='button-cal'>
+            <button onclick="calculadora('valor', 4)" class="button-padrao" >4</button>
+            <button onclick="calculadora('valor', 5)" class="button-padrao" >5</button>
+            <button onclick="calculadora('valor', 6)" class="button-padrao" >6</button>
+            <button onclick="calculadora('acao', '+')" class="button-padrao" >+</button>
+        </div><!--//button-cal-->    
+        <div  class='button-cal'>
+            <button class="button-padrao" >1</button>
+            <button onclick="calculadora('valor', 2)" class="button-padrao" >2</button>
+            <button onclick="calculadora('valor', 3)" class="button-padrao" >3</button>
+        </div><!--//button-cal-->
+        <div  class='button-cal'>
+            <button onclick="calculadora('acao', '=')" class="button-equal" >=</button>
+        </div><!--//button-cal-->
+        <div id='button-end'  class='button-cal'>
+            <button onclick="calculadora('valor', 0)" class="button-clear-zero" >0</button>
+            <button onclick="calculadora('acao', '.')" class="button-padrao">.</button>
+        </div><!--//button-cal-->
+    </div><!--//conteiner-->
+    <script src='_js/script.js'></script>
+</body>
+</html>
