@@ -2,13 +2,13 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    background-color:#141414;
+    background-color:#313030;
 }
 /*formato da calculadora*/
 .conteiner-calculadora{
-    width:500px;
+    width:440px;
     height:540px;
-    margin:100px auto;
+    margin:50px auto;
     border:2px solid black;
     border-radius: 40px;
     background-color:#141414;
@@ -18,20 +18,24 @@
 /*display da calculadora*/
 
 .display-cal{
-    background-color: #a1a1a1;
+    background-color: #dbd8d8b7;
     text-align:right;
-    padding: 15px;
-    border:2px solid rgb(99, 99, 99);
+    padding:15px 20px;
+    border:3px solid rgba(83, 83, 83, 0.233);
     border-radius: 20px;
     margin:30px 50px 20px 50px;
-    width:400px;
+    width:340px;
     height: 50px;
-    color:black;
+    color:rgb(0, 0, 0);
 }
 /**/
 /*buttons*/
+.teclas{
+    padding:5px;
+}
 .button-cal{
-    margin:20px 50px 10px 50px;
+    text-align: center;
+    margin:20px 0px;
 }
 button{
     outline:none;
@@ -39,13 +43,15 @@ button{
     border:2px solid black;
     border-radius: 40px;
     color:#a1a1a1;
+    transition:all 1s;
 }
 button:hover{
     background-color: #191919;
 }
 .button-clear-zero{
-    height:60px;
-    width: 185px;
+    margin-right:15px;
+    height:50px;
+    width: 100px;
 }
 .button-padrao{
     margin-left:2px;
@@ -54,10 +60,13 @@ button:hover{
 }
 .button-equal{
     float:right;
-    margin-right: 30px;
-    margin-top:-70px;
+    position: relative;
+    right:30px;
+    top:10px;
     width: 60px;
-    height: 150px;
+    height: 130px;
 }
-
+button.point{
+    font-weight:bold;
+}
 /**/
